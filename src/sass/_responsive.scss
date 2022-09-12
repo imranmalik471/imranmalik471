@@ -1,0 +1,10 @@
+$layout-breakpoint-md: 1024px;
+
+
+@media(max-width: $layout-breakpoint-md){
+    .banner{
+        .doctor{ 
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,93 @@
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import "variables";
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    font-size: $font-size;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+header {
+    .navbar{
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+   .navbar-brand {
+    font-weight: $font-bold;
+    font-size: $font-lg;
+        span{
+            color: $primary;
+        }
+    }
+    .navbar-expand-lg .navbar-nav .nav-link, .nav-link{
+        text-transform: uppercase;
+        font-weight: $font-bold;
+        padding: 12px 20px;
+        color: rgba(0, 0, 0, 0.90);
+
+    }
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: $primary;
+    border-color: $primary;
+    box-shadow: $box-shadow;
+    padding: 10px 30px;
+    &:hover{
+        background-color: $secondary;
+        border-color: $secondary;
+    }
+}
+
+.banner{
+    background: linear-gradient(to right, #FFD25F 50%, #3166F2 50%);
+    min-height: 420px;
+    padding: 20px 0;
+    color: #222;
+    position: relative;
+    & h1{
+        font-weight: $font-bold;
+        line-height: 44px;
+    }
+    .address{
+        margin-top: 20px;
+        border-bottom: 2px solid rgb(40, 40, 40);
+        font-weight: $font-bold;
+        font-size: $font-md;
+        width: max-content;
+    }
+    .doctor{
+        background-image: url('../images/banner_doctor.png');
+        height: 400px;
+        background-repeat: no-repeat;
+        background-position: center;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+    }
+    .card {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+    }
+    form{
+        .form-label{
+            font-weight: $font-bold;
+        }
+        .form-control{
+            background-color: #F1F3F5;
+            border-color: #F1F3F5;
+            font-size: $font-sm;
+        }
+    }
+     
+}
+
+
+
