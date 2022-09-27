@@ -1,5 +1,8 @@
-$layout-breakpoint-md: 1024px;
+@import "variables";
+$layout-breakpoint-lg: 1024px;
+$layout-breakpoint-md: 992px;
 $layout-breakpoint-sm: 767px;
+$layout-breakpoint-xs: 576px;
 
 
 @media(max-width: $layout-breakpoint-md){
@@ -17,17 +20,61 @@ $layout-breakpoint-sm: 767px;
         .account-heading{
             font-size: 24px;
         }
-        .img-wrapper{
-            margin-top: -30px;
-        }
     }
 }
 @media(max-width: $layout-breakpoint-sm) {
+    .banner{
+        .icon-1, .icon-2{ 
+            display: none;
+        }
+    }
+    .heading-title{
+        font-size: $font-lg;
+    }
     .counters{
         .counter-inner{
             .col-md-4 {
                 border: 0;
             }
+            .counter {
+                margin-bottom: 15px;
+            }
         }
+    }
+    .doctor-section {
+        .img-wrapper{
+            margin-top: 0px;
+        }
+    }
+    .testimonials{ 
+        .box {
+            .review{
+                p {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+    .footer{
+        padding: 30px 0;
+        hr{
+            margin: 2rem 0;
+        }
+        .footer-links{
+            ul {
+                margin-bottom: 20px;
+                padding: 0;
+            }
+        }
+    }
+}
+
+@media(max-width: $layout-breakpoint-xs){
+    .banner {
+        background: linear-gradient(to bottom, #FFD25F 50%, #3166F2 50%);
+        h1{
+            max-width: 100%;
+        }
+        p{max-width: 100%;}
     }
 }
