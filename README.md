@@ -1,0 +1,5 @@
+- 👋 Hi, I’m Muhammad Imran Malik
+- 👀 I’m interested in learning new skills and technology
+- 🌱 I’m currently learning JS framework
+- 💞️ I’m looking to collaborate on different Open-source platforms.
+- 📫 You can reach me @ im471876@gmail.com
